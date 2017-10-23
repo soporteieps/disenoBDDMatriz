@@ -1149,7 +1149,7 @@
 <part>cod_publicidad</part>
 </key>
 </table>
-<table x="1023" y="283" name="turismo">
+<table x="434" y="1427" name="turismo">
 <row name="cod_turismo" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
