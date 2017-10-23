@@ -622,7 +622,7 @@
 <part>cod_articulacion_mercados</part>
 </key>
 </table>
-<table x="824" y="303" name="textil_fomento_intercambio">
+<table x="832" y="309" name="textil_fomento_intercambio">
 <row name="cod_textil" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -929,7 +929,7 @@
 <part>cod_artesanias</part>
 </key>
 </table>
-<table x="401" y="495" name="alimentacion_fortalecimiento_intercambio">
+<table x="2296" y="304" name="alimentacion_fortalecimiento_intercambio">
 <row name="cod_producto" null="1" autoincrement="1">
 <datatype>INTEGER(7)</datatype>
 <default>NULL</default></row>
@@ -1060,7 +1060,7 @@
 <part>cod_producto</part>
 </key>
 </table>
-<table x="1555" y="282" name="publicidad">
+<table x="1811" y="306" name="publicidad">
 <row name="cod_publicidad" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
