@@ -1277,7 +1277,7 @@
 <part>cod_turismo</part>
 </key>
 </table>
-<table x="502" y="1591" name="construccion_fomento_intercambio">
+<table x="1751" y="1056" name="construccion_fomento_intercambio">
 <row name="cod_contruccion" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
