@@ -69,7 +69,7 @@
 <part>cod_capacitaciones</part>
 </key>
 </table>
-<table x="198" y="10" name="requisitos">
+<table x="233" y="10" name="requisitos">
 <row name="cod_requisitos" null="0" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -104,7 +104,7 @@
 <part>cod_requisitos</part>
 </key>
 </table>
-<table x="386" y="10" name="criterios_especificos">
+<table x="456" y="10" name="criterios_especificos">
 <row name="cod_criterio_especifico" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -139,7 +139,7 @@
 <part>cod_criterio_especifico</part>
 </key>
 </table>
-<table x="610" y="10" name="criterio_general">
+<table x="684" y="10" name="criterio_general">
 <row name="cod_criterio_general" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -153,7 +153,7 @@
 <part>cod_criterio_general</part>
 </key>
 </table>
-<table x="785" y="10" name="producto_servicio">
+<table x="890" y="10" name="producto_servicio">
 <row name="cod_producto_servicio" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -176,7 +176,7 @@
 <part>cod_producto_servicio</part>
 </key>
 </table>
-<table x="975" y="10" name="cofinanciamiento">
+<table x="1124" y="8" name="cofinanciamiento">
 <row name="cod_cofinanciamiento" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -202,7 +202,7 @@
 <part>cod_cofinanciamiento</part>
 </key>
 </table>
-<table x="11" y="294" name="agrolimentario_fomento_intercambio">
+<table x="13" y="300" name="agrolimentario_fomento_intercambio">
 <row name="cod_agro_fomento_intercambio" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -441,7 +441,7 @@
 <part>cod_agro_fomento_intercambio</part>
 </key>
 </table>
-<table x="628" y="197" name="sector_departamento">
+<table x="1619" y="13" name="sector_departamento">
 <row name="cod_sector_departamento" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -455,7 +455,7 @@
 <part>cod_sector_departamento</part>
 </key>
 </table>
-<table x="594" y="285" name="metalmecanica">
+<table x="431" y="299" name="metalmecanica">
 <row name="cod_metalmecanica" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -596,7 +596,7 @@
 </key>
 <comment>Sector Metalmecanica</comment>
 </table>
-<table x="464" y="312" name="im_articulacion_mercados">
+<table x="1352" y="9" name="im_articulacion_mercados">
 <row name="cod_articulacion_mercados" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -622,7 +622,7 @@
 <part>cod_articulacion_mercados</part>
 </key>
 </table>
-<table x="377" y="505" name="textil_fomento_intercambio">
+<table x="824" y="303" name="textil_fomento_intercambio">
 <row name="cod_textil" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -757,6 +757,176 @@
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_textil</part>
+</key>
+</table>
+<table x="1389" y="308" name="artesanias_fomento_intercambio">
+<row name="cod_artesanias" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="cod_producto" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fp_caracteristica" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="fp_maq_usa_maquinaria" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_maq_detalle_herramienta_usa" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="fp_maq_cantidad_detalle_maquinaria" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="fp_valor_agregado" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_sal_seg_cuenta_reglamento_sanitario" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_sal_seg_socios_uniformes" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_sal_seg_detalle_implementos" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="fp_per_socios_dispone_elaboracion_artesania" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>NULL</default></row>
+<row name="fp_per_socios_titulo_artesanal" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>NULL</default></row>
+<row name="fp_emp_tipo" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_emp_material" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_emb_tipo" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_emb_material" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_marca_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_mar_registrada_iepi" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_mar_nombre" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_logo_registrada_iepi" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_logo_imagen" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_slo_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_slo_nombre" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_pre_ven_unitario" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="fp_pre_ven_por_mayor" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="fp_pre_ven_consideracion_partir" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>0</default></row>
+<row name="fp_usa_saberes_ancestrales" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_saberes_ancestrales_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_tiempo_caducidad_meses" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>0</default></row>
+<row name="fp_capacidad_produccion_mensual_unidades" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>0</default></row>
+<row name="fp_capacidad_produccion_mensual" null="1" autoincrement="0">
+<datatype>INTEGER(11)</datatype>
+<default>0</default></row>
+<row name="fp_monto_ventas_mensual" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="fp_frecuencia_entrega_cliente" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_log_cobertura_entrega_productos" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_log_ciudades" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_lug_com_establecimientos" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_lug_com_entidad_contratante" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_pro_ven_actividades" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_participa_supermercados_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_par_sup_comercializar_supermercados" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_par_sup_supermercados" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_par_sup_anteriormente" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_par_sup_supermercados_anteriormente" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_par_sup_motivos_no_participa" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="fp_eti_incluyen_etiqueta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_eti_cumple_normas_inen" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_cumple_otra_norma" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="fp_conoce_manejo_residuos" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>'no'</default></row>
+<row name="im_semaforizacion_monto_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="im_semaforizacion_monto_ventas_ieps" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="im_promedio" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="im_semaforizacion_producto" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="im_semaforizacion_oeps" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
+<row name="im_medio_verificable" null="1" autoincrement="0">
+<datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>cod_artesanias</part>
 </key>
 </table>
 </sql>
