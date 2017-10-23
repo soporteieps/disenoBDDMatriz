@@ -1277,4 +1277,126 @@
 <part>cod_turismo</part>
 </key>
 </table>
+<table x="502" y="1591" name="construccion_fomento_intercambio">
+<row name="cod_contruccion" null="1" autoincrement="1">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_servicio" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_valor_agregado" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_materiales_accesorios_prestacion_servicios_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_materiales_accesorios_pretacion_servicios_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_equipos_maquinarias_herramientas_para_prestacion_servicios_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_equipos_maquinarias_herramientas_para_prestacion_servicios_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_experiencia_organizacion" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_cantidad_personas_prestacion_servicio" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_cantidad_personas_tienen_carnet_ministerio_trabajo" null="1" autoincrement="0">
+<datatype>INTEGER(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_manejo_residuos_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_personal_posee_uniforme_identificacion_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_personal_posee_uniforme_identificacion_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_implementos_salud_seguridad_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_implementos_salud_seguridad_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_marca_comercial_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_marca_registrado_iepi_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_marca" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_iepi_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_imagen" null="1" autoincrement="0">
+<datatype>VARCHAR(500)</datatype>
+<default>NULL</default></row>
+<row name="fp_slogan_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_slogan_nombre" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_capacidad_productiva" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_precio_prestacion_servicios" null="1" autoincrement="0">
+<datatype>DECIMAL(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_precio-incluye_transporte_materiales_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_lugar_servicio" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_facturacion_mensual" null="1" autoincrement="0">
+<datatype>DECIMAL(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_ventas_frecuencia_renovacion_contratos" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_transporte_propio_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_transporte_propio_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logistica_cobertura" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logistica_ciudad" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_institucion_presta_servicios" null="1" autoincrement="0">
+<datatype>VARCHAR(2)</datatype>
+<default>NULL</default></row>
+<row name="fp_actualmente_presta_servicios" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_numero_horas_por_empresa" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_presta_servicios_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_promocion_ventas" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>cod_contruccion</part>
+</key>
+</table>
 </sql>
