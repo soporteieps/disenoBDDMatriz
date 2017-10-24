@@ -202,7 +202,7 @@
 <part>cod_cofinanciamiento</part>
 </key>
 </table>
-<table x="17" y="300" name="dm_agrolimentario_fomento_intercambio">
+<table x="22" y="296" name="dm_agrolimentario">
 <row name="cod_agro_fomento_intercambio" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -251,9 +251,6 @@
 <row name="fp_env_material_otro" null="1" autoincrement="0">
 <datatype>VARCHAR(255)</datatype>
 <default>NULL</default></row>
-<row name="fp_env_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
-<default>NULL</default></row>
 <row name="fp_emp_tipo" null="1" autoincrement="0">
 <datatype>VARCHAR(70)</datatype>
 <default>NULL</default></row>
@@ -265,9 +262,6 @@
 <default>NULL</default></row>
 <row name="fp_emp_material_otro" null="1" autoincrement="0">
 <datatype>VARCHAR(255)</datatype>
-<default>NULL</default></row>
-<row name="fp_env_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
 <row name="fp_emb_tipo" null="1" autoincrement="0">
 <datatype>VARCHAR(100)</datatype>
@@ -281,9 +275,6 @@
 <row name="fp_emb_material_otro" null="1" autoincrement="0">
 <datatype>VARCHAR(255)</datatype>
 <default>NULL</default></row>
-<row name="fp_emb_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
-<default>NULL</default></row>
 <row name="fp_marca" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>'no'</default></row>
@@ -293,9 +284,6 @@
 <row name="fp_mar_nombre" null="1" autoincrement="0">
 <datatype>VARCHAR(150)</datatype>
 <default>NULL</default></row>
-<row name="fp_marca_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
-<default>NULL</default></row>
 <row name="fp_logotipo" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>'no'</default></row>
@@ -304,9 +292,6 @@
 <default>'no'</default></row>
 <row name="fp_logo_imagen" null="1" autoincrement="0">
 <datatype>VARCHAR(255)</datatype>
-<default>NULL</default></row>
-<row name="fp_logo_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
 <row name="fp_slogan" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
@@ -353,9 +338,6 @@
 <row name="fp_log_ciudades" null="1" autoincrement="0">
 <datatype>VARCHAR(400)</datatype>
 <default>NULL</default></row>
-<row name="fp_log_peso" null="1" autoincrement="0">
-<datatype>DOUBLE(10,1)</datatype>
-<default>NULL</default></row>
 <row name="fp_lugcom_establecimientos" null="1" autoincrement="0">
 <datatype>VARCHAR(150)</datatype>
 <default>NULL</default></row>
@@ -389,9 +371,6 @@
 <row name="fp_eti_cumple_inen" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>'no'</default></row>
-<row name="fp_eti_peso" null="1" autoincrement="0">
-<datatype>INTEGER(11)</datatype>
-<default>NULL</default></row>
 <row name="fp_cumple_otra_norma" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>'no'</default></row>
@@ -416,6 +395,9 @@
 <row name="fp_registro_sanitario_peso" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -447,7 +429,7 @@
 <part>cod_agro_fomento_intercambio</part>
 </key>
 </table>
-<table x="431" y="299" name="metalmecanica">
+<table x="650" y="282" name="dm_metalmecanica">
 <row name="cod_metalmecanica" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -556,9 +538,6 @@
 <row name="fp_logi_a_que_ciudades" null="1" autoincrement="0">
 <datatype>VARCHAR(300)</datatype>
 <default>NULL</default></row>
-<row name="fp_logi_peso" null="1" autoincrement="0">
-<datatype>DOUBLE(2,1)</datatype>
-<default>NULL</default></row>
 <row name="fp_prv_actividad_medios_promocionar_productos" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
@@ -568,21 +547,18 @@
 <row name="fp_eti_normas_inen" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
-<row name="fp_eti_peso" null="1" autoincrement="0">
-<datatype>DOUBLE(2,1)</datatype>
-<default>NULL</default></row>
 <row name="fp_ont_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
 <row name="fp_ont_cual" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
-<row name="fp_ont_peso" null="1" autoincrement="0">
-<datatype>VARCHAR(200)</datatype>
-<default>NULL</default></row>
 <row name="fp_cod_barras_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -641,7 +617,7 @@
 <part>cod_articulacion_mercados</part>
 </key>
 </table>
-<table x="658" y="286" name="dm_textil_fomento_intercambio">
+<table x="1157" y="295" name="dm_textil">
 <row name="cod_textil" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -649,7 +625,7 @@
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
 <row name="fp_car_tipo_tela" null="1" autoincrement="0">
-<datatype>MEDIUMTEXT(100)</datatype>
+<datatype>VARCHAR(100)</datatype>
 <default>NULL</default></row>
 <row name="fp_valor_agregado" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
@@ -705,7 +681,7 @@
 <row name="fp_pre_ven_por_mayor_partir_de" null="1" autoincrement="0">
 <datatype>DECIMAL(2)</datatype>
 <default>NULL</default></row>
-<row name="fp_maq_equ_her_utiliza_maquinaria_equipos_para_proceso_productivo" null="1" autoincrement="0">
+<row name="fp_meh_utiliza_para_proceso_productivo" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
 <row name="fp_maq_equ_her_cantidad_detalle_herramienta" null="1" autoincrement="0">
@@ -751,7 +727,7 @@
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
 <row name="fp_supermercado_actual_super_o_cadena" null="1" autoincrement="0">
-<datatype>MEDIUMTEXT(200)</datatype>
+<datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
 <row name="fp_supermercado_ anterior_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
@@ -771,6 +747,9 @@
 <row name="fp_codigo_barras_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -802,7 +781,7 @@
 <part>cod_textil</part>
 </key>
 </table>
-<table x="311" y="292" name="dm_artesanias_fomento_intercambio">
+<table x="441" y="293" name="dm_artesanias">
 <row name="cod_artesanias" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -950,6 +929,9 @@
 <row name="fp_conoce_manejo_residuos" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>'no'</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_semaforizacion_monto_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>0.00</default></row>
@@ -978,7 +960,7 @@
 <part>cod_artesanias</part>
 </key>
 </table>
-<table x="1737" y="1761" name="dm_alimentacion_fortalecimiento_intercambio">
+<table x="1737" y="1761" name="dm_alimentacion">
 <row name="cod_producto" null="1" autoincrement="1">
 <datatype>INTEGER(7)</datatype>
 <default>NULL</default></row>
@@ -1033,7 +1015,7 @@
 <row name="fp_personal_posee_uniforme_identificacion_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
-<row name="fp_personal_posee_implementos_salud_seguridad_ocupacional_pregunta" null="1" autoincrement="0">
+<row name="fp_personal_posee_implementos_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
 <row name="fp_personal_salud_seguridad_ocupacional_detalle" null="1" autoincrement="0">
@@ -1105,6 +1087,9 @@
 <row name="fp_promocion_ventas" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -1218,6 +1203,9 @@
 <row name="fp_promocion_ventas" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -1292,10 +1280,10 @@
 <row name="fp_sin_cuenta_reglamento_seguridad_industrial" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
-<row name="fp_sin_realiza_mantenimientos_maquinarias_herramientas_equipos_prestacion_servicios" null="1" autoincrement="0">
+<row name="fp_sin_realiza_mantenimientos_maq_prestacion_servicios" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
-<row name="fp_sin_frecuencia_mantenimientos_maquinarias_herramientas_equipos_prestacion_servicios" null="1" autoincrement="0">
+<row name="fp_sin_frecuencia_mantenimientos_maq_prestacion_servicios" null="1" autoincrement="0">
 <datatype>VARCHAR(100)</datatype>
 <default>NULL</default></row>
 <row name="fp_mar_pregunta" null="1" autoincrement="0">
@@ -1370,6 +1358,9 @@
 <row name="fp_cer_detalle" null="1" autoincrement="0">
 <datatype>CHAR(200)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -1401,7 +1392,7 @@
 <part>cod_turismo</part>
 </key>
 </table>
-<table x="1343" y="1762" name="dm_construccion_fomento_intercambio">
+<table x="1301" y="1762" name="dm_construccion">
 <row name="cod_contruccion" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -1417,10 +1408,10 @@
 <row name="fp_materiales_accesorios_pretacion_servicios_detalle" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
-<row name="fp_equipos_maquinarias_herramientas_para_prestacion_servicios_pregunta" null="1" autoincrement="0">
+<row name="fp_emh_para_prestacion_servicios_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
 <default>NULL</default></row>
-<row name="fp_equipos_maquinarias_herramientas_para_prestacion_servicios_detalle" null="1" autoincrement="0">
+<row name="fp_emh_para_prestacion_servicios_detalle" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
 <row name="fp_experiencia_organizacion" null="1" autoincrement="0">
@@ -1516,6 +1507,9 @@
 <row name="fp_promocion_ventas" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -1668,6 +1662,9 @@
 <row name="fp_experiencia_en_meses" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
@@ -1811,6 +1808,9 @@
 <row name="fp_promocion_ventas" null="1" autoincrement="0">
 <datatype>VARCHAR(200)</datatype>
 <default>NULL</default></row>
+<row name="fp_peso" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>0.00</default></row>
 <row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
 <datatype>DOUBLE(10,2)</datatype>
 <default>NULL</default></row>
