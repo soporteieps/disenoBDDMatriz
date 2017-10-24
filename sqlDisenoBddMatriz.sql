@@ -6,13 +6,13 @@
 -- SET FOREIGN_KEY_CHECKS=0;
 
 -- ---
--- Table 'capacitaciones'
+-- Table 'dm_capacitaciones'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `capacitaciones`;
-		
-CREATE TABLE `capacitaciones` (
+DROP TABLE IF EXISTS `dm_capacitaciones`;
+    
+CREATE TABLE `dm_capacitaciones` (
   `cod_capacitaciones` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_criterio_especifico` INTEGER(11) NULL DEFAULT 0,
   `nombre_taller` VARCHAR(255) NULL DEFAULT NULL,
@@ -26,13 +26,13 @@ CREATE TABLE `capacitaciones` (
 );
 
 -- ---
--- Table 'requisitos'
+-- Table 'dm_requisitos'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `requisitos`;
-		
-CREATE TABLE `requisitos` (
+DROP TABLE IF EXISTS `dm_requisitos`;
+    
+CREATE TABLE `dm_requisitos` (
   `cod_requisitos` INTEGER(11) NOT NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_criterio_especifico` INTEGER(11) NULL DEFAULT NULL,
   `cod_criterio_general` INTEGER(11) NULL DEFAULT NULL,
@@ -47,13 +47,13 @@ CREATE TABLE `requisitos` (
 );
 
 -- ---
--- Table 'criterios_especificos'
+-- Table 'dm_criterios_especificos'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `criterios_especificos`;
-		
-CREATE TABLE `criterios_especificos` (
+DROP TABLE IF EXISTS `dm_criterios_especificos`;
+    
+CREATE TABLE `dm_criterios_especificos` (
   `cod_criterio_especifico` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_criterio_general` INTEGER(11) NULL DEFAULT NULL,
   `nombre_criterio` VARCHAR(150) NULL DEFAULT NULL,
@@ -68,13 +68,13 @@ CREATE TABLE `criterios_especificos` (
 );
 
 -- ---
--- Table 'criterio_general'
+-- Table 'dm_criterio_general'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `criterio_general`;
-		
-CREATE TABLE `criterio_general` (
+DROP TABLE IF EXISTS `dm_criterio_general`;
+    
+CREATE TABLE `dm_criterio_general` (
   `cod_criterio_general` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `nombre_criterio` VARCHAR(150) NULL DEFAULT NULL,
   `departamento` VARCHAR(50) NULL DEFAULT NULL,
@@ -82,13 +82,13 @@ CREATE TABLE `criterio_general` (
 );
 
 -- ---
--- Table 'producto_servicio'
+-- Table 'dm_producto_servicio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `producto_servicio`;
-		
-CREATE TABLE `producto_servicio` (
+DROP TABLE IF EXISTS `dm_producto_servicio`;
+    
+CREATE TABLE `dm_producto_servicio` (
   `cod_producto_servicio` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_criterio_general` INTEGER(11) NULL DEFAULT NULL,
   `nombre_criterio` VARCHAR(150) NULL DEFAULT NULL,
@@ -99,13 +99,13 @@ CREATE TABLE `producto_servicio` (
 );
 
 -- ---
--- Table 'cofinanciamiento'
+-- Table 'dm_cofinanciamiento'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `cofinanciamiento`;
-		
-CREATE TABLE `cofinanciamiento` (
+DROP TABLE IF EXISTS `dm_cofinanciamiento`;
+    
+CREATE TABLE `dm_cofinanciamiento` (
   `cod_cofinanciamiento` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_producto_servicio` INTEGER(11) NULL DEFAULT NULL,
   `nombre_parametro` VARCHAR(150) NULL DEFAULT NULL,
@@ -117,13 +117,13 @@ CREATE TABLE `cofinanciamiento` (
 );
 
 -- ---
--- Table 'agrolimentario_fomento_intercambio'
+-- Table 'dm_agrolimentario_fomento_intercambio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `agrolimentario_fomento_intercambio`;
-		
-CREATE TABLE `agrolimentario_fomento_intercambio` (
+DROP TABLE IF EXISTS `dm_agrolimentario_fomento_intercambio`;
+    
+CREATE TABLE `dm_agrolimentario_fomento_intercambio` (
   `cod_agro_fomento_intercambio` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_producto` INTEGER(11) NULL DEFAULT NULL,
   `cod_u_organizaciones` INTEGER(11) NULL DEFAULT NULL,
@@ -208,26 +208,12 @@ CREATE TABLE `agrolimentario_fomento_intercambio` (
 );
 
 -- ---
--- Table 'sector_departamento'
--- 
--- ---
-
-DROP TABLE IF EXISTS `sector_departamento`;
-		
-CREATE TABLE `sector_departamento` (
-  `cod_sector_departamento` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
-  `departamento` VARCHAR(50) NULL DEFAULT NULL,
-  `nombre_sector` VARCHAR(150) NULL DEFAULT NULL,
-  PRIMARY KEY (`cod_sector_departamento`)
-);
-
--- ---
 -- Table 'metalmecanica'
 -- Sector Metalmecanica
 -- ---
 
 DROP TABLE IF EXISTS `metalmecanica`;
-		
+    
 CREATE TABLE `metalmecanica` (
   `cod_metalmecanica` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_producto` INTEGER(11) NULL DEFAULT NULL,
@@ -287,13 +273,13 @@ CREATE TABLE `metalmecanica` (
 ) COMMENT 'Sector Metalmecanica';
 
 -- ---
--- Table 'im_articulacion_mercados'
+-- Table 'dm_articulacion_mercados'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `im_articulacion_mercados`;
-		
-CREATE TABLE `im_articulacion_mercados` (
+DROP TABLE IF EXISTS `dm_articulacion_mercados`;
+    
+CREATE TABLE `dm_articulacion_mercados` (
   `cod_articulacion_mercados` INTEGER(11) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_agro_fomento_intercambio` INTEGER NULL DEFAULT NULL,
   `tipo_articulacion_mercados` VARCHAR(30) NULL DEFAULT NULL,
@@ -305,13 +291,13 @@ CREATE TABLE `im_articulacion_mercados` (
 );
 
 -- ---
--- Table 'textil_fomento_intercambio'
+-- Table 'dm_textil_fomento_intercambio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `textil_fomento_intercambio`;
-		
-CREATE TABLE `textil_fomento_intercambio` (
+DROP TABLE IF EXISTS `dm_textil_fomento_intercambio`;
+    
+CREATE TABLE `dm_textil_fomento_intercambio` (
   `cod_textil` INTEGER(2) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_producto` INTEGER(11) NULL DEFAULT NULL,
   `fp_car_tipo_tela` MEDIUMTEXT(100) NULL DEFAULT NULL,
@@ -368,13 +354,13 @@ CREATE TABLE `textil_fomento_intercambio` (
 );
 
 -- ---
--- Table 'artesanias_fomento_intercambio'
+-- Table 'dm_artesanias_fomento_intercambio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `artesanias_fomento_intercambio`;
-		
-CREATE TABLE `artesanias_fomento_intercambio` (
+DROP TABLE IF EXISTS `dm_artesanias_fomento_intercambio`;
+    
+CREATE TABLE `dm_artesanias_fomento_intercambio` (
   `cod_artesanias` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_producto` INTEGER NULL DEFAULT NULL,
   `fp_caracteristica` VARCHAR(250) NULL DEFAULT NULL,
@@ -436,13 +422,13 @@ CREATE TABLE `artesanias_fomento_intercambio` (
 );
 
 -- ---
--- Table 'alimentacion_fortalecimiento_intercambio'
+-- Table 'dm_alimentacion_fortalecimiento_intercambio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `alimentacion_fortalecimiento_intercambio`;
-		
-CREATE TABLE `alimentacion_fortalecimiento_intercambio` (
+DROP TABLE IF EXISTS `dm_alimentacion_fortalecimiento_intercambio`;
+    
+CREATE TABLE `dm_alimentacion_fortalecimiento_intercambio` (
   `cod_producto` INTEGER(7) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER(11) NULL DEFAULT NULL,
   `fp_tipo_comida` VARCHAR(200) NULL DEFAULT NULL,
@@ -498,13 +484,13 @@ CREATE TABLE `alimentacion_fortalecimiento_intercambio` (
 );
 
 -- ---
--- Table 'publicidad'
+-- Table 'dm_publicidad'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `publicidad`;
-		
-CREATE TABLE `publicidad` (
+DROP TABLE IF EXISTS `dm_publicidad`;
+    
+CREATE TABLE `dm_publicidad` (
   `cod_publicidad` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER NULL DEFAULT NULL,
   `fp_valor_agregado` VARCHAR(200) NULL DEFAULT NULL,
@@ -545,13 +531,13 @@ CREATE TABLE `publicidad` (
 );
 
 -- ---
--- Table 'turismo'
+-- Table 'dm_turismo'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `turismo`;
-		
-CREATE TABLE `turismo` (
+DROP TABLE IF EXISTS `dm_turismo`;
+    
+CREATE TABLE `dm_turismo` (
   `cod_turismo` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER NULL DEFAULT NULL,
   `fp_maq_cantidad_maquinaria_equipos_utilizados_servicio` VARCHAR(500) NULL DEFAULT NULL,
@@ -605,13 +591,13 @@ CREATE TABLE `turismo` (
 );
 
 -- ---
--- Table 'construccion_fomento_intercambio'
+-- Table 'dm_construccion_fomento_intercambio'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `construccion_fomento_intercambio`;
-		
-CREATE TABLE `construccion_fomento_intercambio` (
+DROP TABLE IF EXISTS `dm_construccion_fomento_intercambio`;
+    
+CREATE TABLE `dm_construccion_fomento_intercambio` (
   `cod_contruccion` INTEGER(2) NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER NULL DEFAULT NULL,
   `fp_valor_agregado` VARCHAR(200) NULL DEFAULT NULL,
@@ -663,13 +649,13 @@ CREATE TABLE `construccion_fomento_intercambio` (
 );
 
 -- ---
--- Table 'reciclaje'
+-- Table 'dm_reciclaje'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `reciclaje`;
-		
-CREATE TABLE `reciclaje` (
+DROP TABLE IF EXISTS `dm_reciclaje`;
+    
+CREATE TABLE `dm_reciclaje` (
   `cod_reciclaje` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER(11) NULL DEFAULT NULL,
   `fp_maq_utiliza_maquina_equipos` CHAR(7) NULL DEFAULT NULL,
@@ -723,13 +709,13 @@ CREATE TABLE `reciclaje` (
 );
 
 -- ---
--- Table 'limpieza'
+-- Table 'dm_limpieza'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `limpieza`;
-		
-CREATE TABLE `limpieza` (
+DROP TABLE IF EXISTS `dm_limpieza`;
+    
+CREATE TABLE `dm_limpieza` (
   `cod_limpieza` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_md_servicio` INTEGER(11) NULL DEFAULT NULL,
   `fp_valor_agregado` VARCHAR(200) NULL DEFAULT NULL,
@@ -785,7 +771,7 @@ CREATE TABLE `limpieza` (
 -- ---
 
 DROP TABLE IF EXISTS `md_producto`;
-		
+    
 CREATE TABLE `md_producto` (
   `cod_md_producto` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `cod_u_organizacionex` INTEGER NULL DEFAULT NULL,
@@ -803,7 +789,7 @@ CREATE TABLE `md_producto` (
 -- ---
 
 DROP TABLE IF EXISTS `md_servicio`;
-		
+    
 CREATE TABLE `md_servicio` (
   `cod_md_servicio` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `nombre` VARCHAR(200) NULL DEFAULT NULL,
@@ -814,3 +800,5 @@ CREATE TABLE `md_servicio` (
   `user` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`cod_md_servicio`)
 );
+
+-- ('','','','','','','');

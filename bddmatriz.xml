@@ -37,7 +37,7 @@
 		<type label="SET" length="1" sql="SET" quote=""/>
 		<type label="Bit" length="0" sql="bit" quote=""/>
 	</group>
-</datatypes><table x="10" y="10" name="capacitaciones">
+</datatypes><table x="10" y="10" name="dm_capacitaciones">
 <row name="cod_capacitaciones" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -69,7 +69,7 @@
 <part>cod_capacitaciones</part>
 </key>
 </table>
-<table x="233" y="10" name="requisitos">
+<table x="233" y="10" name="dm_requisitos">
 <row name="cod_requisitos" null="0" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -104,7 +104,7 @@
 <part>cod_requisitos</part>
 </key>
 </table>
-<table x="456" y="10" name="criterios_especificos">
+<table x="456" y="10" name="dm_criterios_especificos">
 <row name="cod_criterio_especifico" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -139,7 +139,7 @@
 <part>cod_criterio_especifico</part>
 </key>
 </table>
-<table x="684" y="10" name="criterio_general">
+<table x="684" y="10" name="dm_criterio_general">
 <row name="cod_criterio_general" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -153,7 +153,7 @@
 <part>cod_criterio_general</part>
 </key>
 </table>
-<table x="890" y="10" name="producto_servicio">
+<table x="890" y="10" name="dm_producto_servicio">
 <row name="cod_producto_servicio" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -176,7 +176,7 @@
 <part>cod_producto_servicio</part>
 </key>
 </table>
-<table x="1124" y="8" name="cofinanciamiento">
+<table x="1124" y="8" name="dm_cofinanciamiento">
 <row name="cod_cofinanciamiento" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -202,7 +202,7 @@
 <part>cod_cofinanciamiento</part>
 </key>
 </table>
-<table x="13" y="300" name="agrolimentario_fomento_intercambio">
+<table x="17" y="300" name="dm_agrolimentario_fomento_intercambio">
 <row name="cod_agro_fomento_intercambio" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -447,20 +447,6 @@
 <part>cod_agro_fomento_intercambio</part>
 </key>
 </table>
-<table x="1619" y="13" name="sector_departamento">
-<row name="cod_sector_departamento" null="1" autoincrement="1">
-<datatype>INTEGER(11)</datatype>
-<default>NULL</default></row>
-<row name="departamento" null="1" autoincrement="0">
-<datatype>VARCHAR(50)</datatype>
-<default>NULL</default></row>
-<row name="nombre_sector" null="1" autoincrement="0">
-<datatype>VARCHAR(150)</datatype>
-<default>NULL</default></row>
-<key type="PRIMARY" name="">
-<part>cod_sector_departamento</part>
-</key>
-</table>
 <table x="431" y="299" name="metalmecanica">
 <row name="cod_metalmecanica" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
@@ -629,7 +615,7 @@
 </key>
 <comment>Sector Metalmecanica</comment>
 </table>
-<table x="1352" y="9" name="im_articulacion_mercados">
+<table x="1352" y="9" name="dm_articulacion_mercados">
 <row name="cod_articulacion_mercados" null="1" autoincrement="1">
 <datatype>INTEGER(11)</datatype>
 <default>NULL</default></row>
@@ -655,7 +641,7 @@
 <part>cod_articulacion_mercados</part>
 </key>
 </table>
-<table x="658" y="286" name="textil_fomento_intercambio">
+<table x="658" y="286" name="dm_textil_fomento_intercambio">
 <row name="cod_textil" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -816,7 +802,7 @@
 <part>cod_textil</part>
 </key>
 </table>
-<table x="311" y="292" name="artesanias_fomento_intercambio">
+<table x="311" y="292" name="dm_artesanias_fomento_intercambio">
 <row name="cod_artesanias" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -992,7 +978,7 @@
 <part>cod_artesanias</part>
 </key>
 </table>
-<table x="1737" y="1761" name="alimentacion_fortalecimiento_intercambio">
+<table x="1737" y="1761" name="dm_alimentacion_fortalecimiento_intercambio">
 <row name="cod_producto" null="1" autoincrement="1">
 <datatype>INTEGER(7)</datatype>
 <default>NULL</default></row>
@@ -1150,7 +1136,7 @@
 <part>cod_producto</part>
 </key>
 </table>
-<table x="996" y="1764" name="publicidad">
+<table x="996" y="1764" name="dm_publicidad">
 <row name="cod_publicidad" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -1263,7 +1249,7 @@
 <part>cod_publicidad</part>
 </key>
 </table>
-<table x="467" y="1720" name="turismo">
+<table x="467" y="1720" name="dm_turismo">
 <row name="cod_turismo" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -1415,7 +1401,7 @@
 <part>cod_turismo</part>
 </key>
 </table>
-<table x="1343" y="1762" name="construccion_fomento_intercambio">
+<table x="1343" y="1762" name="dm_construccion_fomento_intercambio">
 <row name="cod_contruccion" null="1" autoincrement="1">
 <datatype>INTEGER(2)</datatype>
 <default>NULL</default></row>
@@ -1561,7 +1547,7 @@
 <part>cod_contruccion</part>
 </key>
 </table>
-<table x="2183" y="1764" name="reciclaje">
+<table x="2183" y="1764" name="dm_reciclaje">
 <row name="cod_reciclaje" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -1713,7 +1699,7 @@
 <part>cod_reciclaje</part>
 </key>
 </table>
-<table x="2535" y="1763" name="limpieza">
+<table x="2535" y="1763" name="dm_limpieza">
 <row name="cod_limpieza" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -1894,7 +1880,7 @@
 <default>NULL</default></row>
 <row name="cod_u_organizaciones" null="1" autoincrement="0">
 <datatype>INTEGER(11)</datatype>
-</row>
+<default>NULL</default></row>
 <row name="sector" null="1" autoincrement="0">
 <datatype>VARCHAR(100)</datatype>
 <default>NULL</default></row>
