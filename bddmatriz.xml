@@ -437,6 +437,12 @@
 <row name="im_medio_verificable" null="1" autoincrement="0">
 <datatype>VARCHAR(255)</datatype>
 <default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>CURRENT_TIMESTAMP</default></row>
+<row name="user" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_agro_fomento_intercambio</part>
 </key>
@@ -590,6 +596,33 @@
 <default>NULL</default></row>
 <row name="fp_cod_barras_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_ventas_acompanamiento" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_promedio" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_producto" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_oeps" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_medio_verificable" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>CURRENT_TIMESTAMP</default></row>
+<row name="user" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_metalmecanica</part>
@@ -754,6 +787,33 @@
 <default>NULL</default></row>
 <row name="fp_codigo_barras_pregunta" null="1" autoincrement="0">
 <datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="im_sumatoria_montos_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_ventas_acompanamiento" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_promedio" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_producto" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_semaforizacion_oeps" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="im_medio_verificable" null="1" autoincrement="0">
+<datatype>VARCHAR(255)</datatype>
+<default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>CURRENT_TIMESTAMP</default></row>
+<row name="user" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_textil</part>
@@ -924,6 +984,12 @@
 <default>0.00</default></row>
 <row name="im_medio_verificable" null="1" autoincrement="0">
 <datatype>VARCHAR(250)</datatype>
+<default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>CURRENT_TIMESTAMP</default></row>
+<row name="user" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_artesanias</part>
@@ -1149,7 +1215,7 @@
 <part>cod_publicidad</part>
 </key>
 </table>
-<table x="434" y="1427" name="turismo">
+<table x="434" y="1622" name="turismo">
 <row name="cod_turismo" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -1644,6 +1710,32 @@
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>cod_limpieza</part>
+</key>
+</table>
+<table x="625" y="113" name="producto">
+<row name="cod_producto" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="cod_u_organizacionex" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="nombre" null="1" autoincrement="0">
+<datatype>VARCHAR(150)</datatype>
+<default>NULL</default></row>
+<row name="caracteristicas" null="1" autoincrement="0">
+<datatype>VARCHAR(500)</datatype>
+<default>NULL</default></row>
+<row name="sector" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<row name="fecha_registro" null="1" autoincrement="0">
+<datatype>TIMESTAMP</datatype>
+<default>CURRENT_TIMESTAMP</default></row>
+<row name="user" null="1" autoincrement="0">
+<datatype>VARCHAR(50)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>cod_producto</part>
 </key>
 </table>
 </sql>
