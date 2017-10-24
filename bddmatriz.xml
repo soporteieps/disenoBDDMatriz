@@ -1399,4 +1399,132 @@
 <part>cod_contruccion</part>
 </key>
 </table>
+<table x="1174" y="1679" name="reciclaje">
+<row name="cod_reciclaje" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fp_nombre_servicio" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_caracteristicas" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_maq_utiliza_maquina_equipos" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_maq_cantidad_detalle_herramientas" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_maq_cantidad_detalle_maquinaria" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_lugar_recoleccion" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_sso_cuenta_reglamento_seguridad_ocupacional" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_sso_detalle_implementos_salud_seguridad_ocupacional" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrso_recicla_solidos_organicos" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrso_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrso_lugar" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrso_proceso" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrsi_recicla_solidos_inorganicos" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrsi_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrsi_lugar" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mrsi_proceso" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_mar_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_mar_registrada_iepi" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_mar_nombre_marca" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_registrado_iepi" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_logo_imagen" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_slo_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_slo_slogan" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_pvk_unitario" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="fp_pvk_x_mayor" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="fp_pvk_x_mayor_a_partir_de" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="fp_utiliza_transporte" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_detalle_rutas" null="1" autoincrement="0">
+<datatype>VARCHAR(500)</datatype>
+<default>NULL</default></row>
+<row name="fp_recoleccion_mensual_kilogramos" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="fp_cantidad_producto_vendido" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="fp_monto_ventas" null="1" autoincrement="0">
+<datatype>DOUBLE(10,2)</datatype>
+<default>NULL</default></row>
+<row name="fp_frecuencia_entrega_cliente" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_logi_cobertura_entrega_producto" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="fp_logi_a_que_ciudades" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_lss_institucion" null="1" autoincrement="0">
+<datatype>VARCHAR(100)</datatype>
+<default>NULL</default></row>
+<row name="fp_lss_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_sri_pregunta" null="1" autoincrement="0">
+<datatype>CHAR(7)</datatype>
+<default>NULL</default></row>
+<row name="fp_sri_detalle" null="1" autoincrement="0">
+<datatype>VARCHAR(200)</datatype>
+<default>NULL</default></row>
+<row name="fp_experiencia_en_meses" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>cod_reciclaje</part>
+</key>
+</table>
 </sql>
